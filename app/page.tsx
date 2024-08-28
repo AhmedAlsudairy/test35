@@ -20,7 +20,7 @@ export default async function UserListPage() {
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">User List</h1>
       <ul className="space-y-2">
-        {users.map((user) => (
+        {users.map((user:any) => (
           <li key={user.id} className="bg-gray-100 p-2 rounded">
             <Link href={`/users/${user.id}`} className="text-blue-600 hover:underline">
               {user.name} (ID: {user.id})
